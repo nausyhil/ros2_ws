@@ -58,3 +58,23 @@ https://fast-dds.docs.eprosima.com/en/latest/fastdds/xml_configuration/transport
 https://www.omg.org/spec/DDS/\
 https://www.jsoftware.us/vol6/jsw0606-23.pdf\
 https://orte.sourceforge.net/rtn08_orte.pdf
+
+BUG?
+```
+~/ros2_ws$ ros2 node list
+WARNING: Be aware that there are nodes in the graph that share an exact name, which can have unintended side effects.
+/diff_drive_sim
+/diff_drive_sim
+/diff_drive_sim
+/diff_drive_sim
+/diff_drive_sim
+/diff_drive_sim
+/diff_drive_sim
+/rviz
+/transform_listener_impl_55fd57757dc0
+```
+
+Need to install below so the launch file can start up.
+`sudo apt install ros-jazzy-nav2-bringup`
+
+`~/ros2_ws$ ros2 launch my_nav2_launch bringup_launch.py  namespace:=robot1   use_sim_time:=true   autostart:=true  rviz:=true`

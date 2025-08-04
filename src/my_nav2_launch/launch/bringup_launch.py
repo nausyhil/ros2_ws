@@ -44,12 +44,21 @@ def generate_launch_description():
         'use_sim_time': use_sim_time,
         'yaml_filename': LaunchConfiguration('map')
     }
+
+    # value_subs = {
+    #     'KEEPOUT_ZONE_ENABLED': False,
+    #     'SPEED_ZONE_ENABLED': False
+    # }
+
     configured_params = RewrittenYaml(
         source_file=LaunchConfiguration('params'),
         root_key=namespace,
         param_rewrites=param_subs,
+        # value_rewrites=value_subs,
         convert_types=True
     )
+
+    # print(configured_params)
 
     # Common remappings
     remappings = [

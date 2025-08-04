@@ -1,0 +1,238 @@
+[INFO] [launch]: All log files can be found below /home/shuyan/.ros/log/2025-08-03-21-00-37-284233-shuyan-111811
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [simulator-1]: process started with pid [111833]
+[INFO] [map_to_laserscan-2]: process started with pid [111834]
+[INFO] [map_server-3]: process started with pid [111835]
+[INFO] [amcl-4]: process started with pid [111836]
+[INFO] [lifecycle_manager-5]: process started with pid [111837]
+[INFO] [controller_server-6]: process started with pid [111838]
+[INFO] [smoother_server-7]: process started with pid [111839]
+[INFO] [planner_server-8]: process started with pid [111840]
+[INFO] [behavior_server-9]: process started with pid [111841]
+[INFO] [bt_navigator-10]: process started with pid [111842]
+[INFO] [waypoint_follower-11]: process started with pid [111843]
+[INFO] [velocity_smoother-12]: process started with pid [111844]
+[INFO] [collision_monitor-13]: process started with pid [111845]
+[INFO] [opennav_docking-14]: process started with pid [111846]
+[INFO] [lifecycle_manager-15]: process started with pid [111847]
+[lifecycle_manager-5] [INFO] [1754280038.463353920] [lifecycle_manager_localization]: Creating
+[controller_server-6] [INFO] [1754280038.468420294] [controller_server]: 
+[controller_server-6] 	controller_server lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[controller_server-6] [INFO] [1754280038.486165351] [controller_server]: Creating controller server
+[lifecycle_manager-5] [INFO] [1754280038.497515948] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[lifecycle_manager-15] [INFO] [1754280038.502046535] [lifecycle_manager_navigation]: Creating
+[map_to_laserscan-2] Traceback (most recent call last):
+[map_to_laserscan-2]   File "/home/shuyan/ros2_ws/install/map_to_laserscan_py/lib/map_to_laserscan_py/map_to_laserscan", line 33, in <module>
+[map_to_laserscan-2]     sys.exit(load_entry_point('map-to-laserscan-py', 'console_scripts', 'map_to_laserscan')())
+[map_to_laserscan-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[map_to_laserscan-2]   File "/home/shuyan/ros2_ws/install/map_to_laserscan_py/lib/map_to_laserscan_py/map_to_laserscan", line 25, in importlib_load_entry_point
+[map_to_laserscan-2]     return next(matches).load()
+[map_to_laserscan-2]            ^^^^^^^^^^^^^^^^^^^^
+[map_to_laserscan-2]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+[map_to_laserscan-2]     module = import_module(match.group('module'))
+[map_to_laserscan-2]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[map_to_laserscan-2]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+[map_to_laserscan-2]     return _bootstrap._gcd_import(name[level:], package, level)
+[map_to_laserscan-2]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[map_to_laserscan-2]   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+[map_to_laserscan-2]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+[map_to_laserscan-2]   File "<frozen importlib._bootstrap>", line 1324, in _find_and_load_unlocked
+[map_to_laserscan-2] ModuleNotFoundError: No module named 'map_to_laserscan_py.map_to_laserscan'
+[collision_monitor-13] [INFO] [1754280038.525896327] [collision_monitor]: 
+[collision_monitor-13] 	collision_monitor lifecycle node launched. 
+[collision_monitor-13] 	Waiting on external lifecycle transitions to activate
+[collision_monitor-13] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-15] [INFO] [1754280038.525953386] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[amcl-4] [INFO] [1754280038.527794611] [amcl]: 
+[amcl-4] 	amcl lifecycle node launched. 
+[amcl-4] 	Waiting on external lifecycle transitions to activate
+[amcl-4] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-4] [INFO] [1754280038.529270195] [amcl]: Creating
+[velocity_smoother-12] [INFO] [1754280038.530001014] [velocity_smoother]: 
+[velocity_smoother-12] 	velocity_smoother lifecycle node launched. 
+[velocity_smoother-12] 	Waiting on external lifecycle transitions to activate
+[velocity_smoother-12] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[behavior_server-9] [INFO] [1754280038.540783787] [behavior_server]: 
+[behavior_server-9] 	behavior_server lifecycle node launched. 
+[behavior_server-9] 	Waiting on external lifecycle transitions to activate
+[behavior_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-8] [INFO] [1754280038.589645411] [planner_server]: 
+[planner_server-8] 	planner_server lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-10] [INFO] [1754280038.591207665] [bt_navigator]: 
+[bt_navigator-10] 	bt_navigator lifecycle node launched. 
+[bt_navigator-10] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-10] [INFO] [1754280038.597033686] [bt_navigator]: Creating
+[ERROR] [map_to_laserscan-2]: process has died [pid 111834, exit code 1, cmd '/home/shuyan/ros2_ws/install/map_to_laserscan_py/lib/map_to_laserscan_py/map_to_laserscan --ros-args -r __node:=map_to_laserscan --params-file /tmp/launch_params_jq02_gyr -r /tf:=tf -r /tf_static:=tf_static'].
+[planner_server-8] [INFO] [1754280038.601048400] [planner_server]: Creating
+[smoother_server-7] [INFO] [1754280038.619388310] [smoother_server]: 
+[smoother_server-7] 	smoother_server lifecycle node launched. 
+[smoother_server-7] 	Waiting on external lifecycle transitions to activate
+[smoother_server-7] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[waypoint_follower-11] [INFO] [1754280038.624755879] [waypoint_follower]: 
+[waypoint_follower-11] 	waypoint_follower lifecycle node launched. 
+[waypoint_follower-11] 	Waiting on external lifecycle transitions to activate
+[waypoint_follower-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[smoother_server-7] [INFO] [1754280038.624870920] [smoother_server]: Creating smoother server
+[waypoint_follower-11] [INFO] [1754280038.626360018] [waypoint_follower]: Creating
+[opennav_docking-14] [INFO] [1754280038.629230666] [docking_server]: 
+[opennav_docking-14] 	docking_server lifecycle node launched. 
+[opennav_docking-14] 	Waiting on external lifecycle transitions to activate
+[opennav_docking-14] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[opennav_docking-14] [INFO] [1754280038.629508898] [docking_server]: Creating docking_server
+[controller_server-6] [INFO] [1754280038.633018456] [local_costmap.local_costmap]: 
+[controller_server-6] 	local_costmap lifecycle node launched. 
+[controller_server-6] 	Waiting on external lifecycle transitions to activate
+[controller_server-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-5] [INFO] [1754280038.634543980] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-5] [INFO] [1754280038.634665142] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[controller_server-6] [INFO] [1754280038.635186892] [local_costmap.local_costmap]: Creating Costmap
+[map_server-3] [INFO] [1754280038.639275350] [map_server]: 
+[map_server-3] 	map_server lifecycle node launched. 
+[map_server-3] 	Waiting on external lifecycle transitions to activate
+[map_server-3] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-3] [INFO] [1754280038.639549993] [map_server]: Creating
+[map_server-3] [INFO] [1754280038.640924532] [map_server]: Configuring
+[map_server-3] [INFO] [1754280038.641077212] [map_io]: Loading yaml file: /home/shuyan/ros2_ws/install/my_nav2_launch/share/my_nav2_launch/maps/maze.yaml
+[map_server-3] [INFO] [1754280038.641591463] [map_io]: resolution: 0.05
+[map_server-3] [INFO] [1754280038.641624007] [map_io]: origin[0]: -4.64
+[map_server-3] [INFO] [1754280038.641637562] [map_io]: origin[1]: -10
+[map_server-3] [INFO] [1754280038.641776350] [map_io]: origin[2]: 0
+[map_server-3] [INFO] [1754280038.641798558] [map_io]: free_thresh: 0.25
+[map_server-3] [INFO] [1754280038.641809816] [map_io]: occupied_thresh: 0.65
+[map_server-3] [INFO] [1754280038.641822725] [map_io]: mode: trinary
+[map_server-3] [INFO] [1754280038.641833348] [map_io]: negate: 0
+[map_server-3] [INFO] [1754280038.642289904] [map_io]: Loading image_file: /home/shuyan/ros2_ws/install/my_nav2_launch/share/my_nav2_launch/maps/maze.pgm
+[map_server-3] [INFO] [1754280038.647106729] [map_io]: Read map /home/shuyan/ros2_ws/install/my_nav2_launch/share/my_nav2_launch/maps/maze.pgm: 265 X 261 map @ 0.05 m/cell
+[lifecycle_manager-5] [INFO] [1754280038.670035391] [lifecycle_manager_localization]: [34m[1mConfiguring amcl[0m[0m
+[amcl-4] [INFO] [1754280038.670750862] [amcl]: Configuring
+[amcl-4] [INFO] [1754280038.670910535] [amcl]: initTransforms
+[planner_server-8] [INFO] [1754280038.691541002] [global_costmap.global_costmap]: 
+[planner_server-8] 	global_costmap lifecycle node launched. 
+[planner_server-8] 	Waiting on external lifecycle transitions to activate
+[planner_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-8] [INFO] [1754280038.693326755] [global_costmap.global_costmap]: Creating Costmap
+[amcl-4] [INFO] [1754280038.712730273] [amcl]: initPubSub
+[amcl-4] [INFO] [1754280038.733998122] [amcl]: Subscribed to map topic.
+[lifecycle_manager-5] [INFO] [1754280038.752002519] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[map_server-3] [INFO] [1754280038.752480390] [map_server]: Activating
+[map_server-3] [INFO] [1754280038.752825269] [map_server]: Creating bond (map_server) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1754280038.861974312] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-5] [INFO] [1754280038.862203517] [lifecycle_manager_localization]: [34m[1mActivating amcl[0m[0m
+[amcl-4] [INFO] [1754280038.862920766] [amcl]: Activating
+[amcl-4] [INFO] [1754280038.862980269] [amcl]: Creating bond (amcl) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1754280038.978543204] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-5] [INFO] [1754280038.978683632] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[lifecycle_manager-5] [INFO] [1754280038.978734422] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[lifecycle_manager-15] [INFO] [1754280039.472733103] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[lifecycle_manager-15] [INFO] [1754280039.472882930] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[controller_server-6] [INFO] [1754280039.473803247] [controller_server]: Configuring controller interface
+[controller_server-6] [INFO] [1754280039.473880974] [controller_server]: getting progress checker plugins..
+[controller_server-6] [INFO] [1754280039.474629333] [controller_server]: getting goal checker plugins..
+[controller_server-6] [INFO] [1754280039.475661274] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-6] [INFO] [1754280039.475839679] [local_costmap.local_costmap]: Configuring
+[amcl-4] [INFO] [1754280039.490756484] [amcl]: Received a 265 X 261 map @ 0.050 m/pix
+[controller_server-6] [INFO] [1754280039.506933432] [local_costmap.local_costmap]: Using plugin "static_layer"
+[controller_server-6] [INFO] [1754280039.517323878] [local_costmap.local_costmap]: Subscribing to the map topic (/map) with transient local durability
+[controller_server-6] [INFO] [1754280039.522463462] [local_costmap.local_costmap]: Initialized plugin "static_layer"
+[controller_server-6] [INFO] [1754280039.522548703] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[controller_server-6] [INFO] [1754280039.526328852] [local_costmap.local_costmap]: Subscribed to Topics: 
+[controller_server-6] [INFO] [1754280039.526527993] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-6] [INFO] [1754280039.526567836] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-6] [INFO] [1754280039.530044711] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[controller_server-6] [INFO] [1754280039.611936271] [local_costmap.local_costmap]: StaticLayer: Resizing costmap to 265 X 261 at 0.050000 m/pix
+[controller_server-6] [INFO] [1754280039.612320751] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-6] [INFO] [1754280039.614149878] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[controller_server-6] [INFO] [1754280039.615029583] [controller_server]: Created goal checker : goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-6] [INFO] [1754280039.616295650] [controller_server]: Controller Server has goal_checker  goal checkers available.
+[controller_server-6] [INFO] [1754280039.622020245] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-6] [INFO] [1754280039.631154039] [controller_server]: Setting transform_tolerance to 0.100000
+[controller_server-6] [ERROR] [1754280039.678696098] [controller_server]: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[controller_server-6] [ERROR] [1754280039.695735098] [controller_server]: Caught exception in callback for transition 10
+[controller_server-6] [ERROR] [1754280039.695961720] [controller_server]: Original error: Couldn't load critics! Caught exception: No critics defined for FollowPath
+[controller_server-6] [WARN] [1754280039.696040667] [controller_server]: Error occurred while doing error handling.
+[controller_server-6] [FATAL] [1754280039.696061250] [controller_server]: Lifecycle node controller_server does not have error state implemented
+[lifecycle_manager-15] [ERROR] [1754280039.697934582] [lifecycle_manager_navigation]: Failed to change state for node: controller_server
+[lifecycle_manager-15] [ERROR] [1754280039.698046012] [lifecycle_manager_navigation]: Failed to bring up all requested nodes. Aborting bringup.
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[lifecycle_manager-15] [INFO] [1754280128.409082704] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-15] [INFO] [1754280128.409447661] [lifecycle_manager_navigation]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_navigation)
+[opennav_docking-14] [INFO] [1754280128.409093974] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-11] [INFO] [1754280128.409198294] [rclcpp]: signal_handler(signum=2)
+[waypoint_follower-11] [INFO] [1754280128.409624221] [waypoint_follower]: Running Nav2 LifecycleNode rcl preshutdown (waypoint_follower)
+[waypoint_follower-11] [INFO] [1754280128.409752173] [waypoint_follower]: Destroying bond (waypoint_follower) to lifecycle manager.
+[velocity_smoother-12] [INFO] [1754280128.409230422] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-10] [INFO] [1754280128.409261465] [rclcpp]: signal_handler(signum=2)
+[bt_navigator-10] [INFO] [1754280128.409451266] [bt_navigator]: Running Nav2 LifecycleNode rcl preshutdown (bt_navigator)
+[bt_navigator-10] [INFO] [1754280128.409554553] [bt_navigator]: Destroying bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-5] [INFO] [1754280128.409342954] [rclcpp]: signal_handler(signum=2)
+[lifecycle_manager-5] [INFO] [1754280128.409514065] [lifecycle_manager_localization]: Running Nav2 LifecycleManager rcl preshutdown (lifecycle_manager_localization)
+[lifecycle_manager-5] [INFO] [1754280128.409585591] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[map_server-3] [INFO] [1754280128.409354842] [rclcpp]: signal_handler(signum=2)
+[simulator-1] [INFO] [1754280128.409358235] [rclcpp]: signal_handler(signum=2)
+[planner_server-8] [INFO] [1754280128.409419679] [rclcpp]: signal_handler(signum=2)
+[smoother_server-7] [INFO] [1754280128.409512397] [rclcpp]: signal_handler(signum=2)
+[smoother_server-7] [INFO] [1754280128.409650229] [smoother_server]: Running Nav2 LifecycleNode rcl preshutdown (smoother_server)
+[smoother_server-7] [INFO] [1754280128.409729047] [smoother_server]: Destroying bond (smoother_server) to lifecycle manager.
+[controller_server-6] [INFO] [1754280128.409530837] [rclcpp]: signal_handler(signum=2)
+[controller_server-6] [INFO] [1754280128.409676975] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[controller_server-6] [INFO] [1754280128.409751569] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[collision_monitor-13] [INFO] [1754280128.409542453] [rclcpp]: signal_handler(signum=2)
+[collision_monitor-13] [INFO] [1754280128.409691046] [collision_monitor]: Running Nav2 LifecycleNode rcl preshutdown (collision_monitor)
+[collision_monitor-13] [INFO] [1754280128.409769132] [collision_monitor]: Destroying bond (collision_monitor) to lifecycle manager.
+[behavior_server-9] [INFO] [1754280128.411429056] [rclcpp]: signal_handler(signum=2)
+[behavior_server-9] [INFO] [1754280128.414374397] [behavior_server]: Running Nav2 LifecycleNode rcl preshutdown (behavior_server)
+[behavior_server-9] [INFO] [1754280128.414451336] [behavior_server]: Destroying bond (behavior_server) to lifecycle manager.
+[behavior_server-9] [INFO] [1754280128.420080074] [behavior_server]: Destroying
+[amcl-4] [INFO] [1754280128.411434499] [rclcpp]: signal_handler(signum=2)
+[amcl-4] [INFO] [1754280128.417437754] [amcl]: Running Nav2 LifecycleNode rcl preshutdown (amcl)
+[amcl-4] [INFO] [1754280128.417561048] [amcl]: Deactivating
+[amcl-4] [INFO] [1754280128.417604491] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[amcl-4] [INFO] [1754280128.428052625] [amcl]: Cleaning up
+[opennav_docking-14] [INFO] [1754280128.411556831] [docking_server]: Running Nav2 LifecycleNode rcl preshutdown (docking_server)
+[opennav_docking-14] [INFO] [1754280128.411640691] [docking_server]: Destroying bond (docking_server) to lifecycle manager.
+[opennav_docking-14] [INFO] [1754280128.413550456] [docking_server]: Destroying
+[map_server-3] [INFO] [1754280128.411614209] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[map_server-3] [INFO] [1754280128.411707674] [map_server]: Deactivating
+[map_server-3] [INFO] [1754280128.411740127] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[map_server-3] [INFO] [1754280128.423221440] [map_server]: Cleaning up
+[map_server-3] [INFO] [1754280128.423300238] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[planner_server-8] [INFO] [1754280128.412531149] [planner_server]: Running Nav2 LifecycleNode rcl preshutdown (planner_server)
+[planner_server-8] [INFO] [1754280128.412619573] [planner_server]: Destroying bond (planner_server) to lifecycle manager.
+[planner_server-8] [INFO] [1754280128.415372965] [global_costmap.global_costmap]: Destroying
+[velocity_smoother-12] [INFO] [1754280128.412948322] [velocity_smoother]: Running Nav2 LifecycleNode rcl preshutdown (velocity_smoother)
+[velocity_smoother-12] [INFO] [1754280128.413031489] [velocity_smoother]: Destroying bond (velocity_smoother) to lifecycle manager.
+[velocity_smoother-12] [INFO] [1754280128.414238558] [velocity_smoother]: Destroying
+[waypoint_follower-11] [INFO] [1754280128.413993282] [waypoint_follower]: Destroying
+[smoother_server-7] [INFO] [1754280128.417648512] [smoother_server]: Destroying
+[collision_monitor-13] [INFO] [1754280128.417823853] [collision_monitor]: Destroying
+[bt_navigator-10] [INFO] [1754280128.418306097] [bt_navigator]: Destroying
+[controller_server-6] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[controller_server-6]          at line 127 in ./src/class_loader.cpp
+[amcl-4] [INFO] [1754280128.468283651] [amcl]: Destroying bond (amcl) to lifecycle manager.
+[map_server-3] [INFO] [1754280128.486159245] [map_server]: Destroying
+[lifecycle_manager-5] [INFO] [1754280128.500920808] [lifecycle_manager_localization]: Destroying lifecycle_manager_localization
+[amcl-4] [INFO] [1754280128.506843850] [amcl]: Destroying
+[planner_server-8] [INFO] [1754280128.524380716] [planner_server]: Destroying
+[lifecycle_manager-15] [INFO] [1754280128.533343581] [rclcpp]: signal_handler(signum=2)
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[lifecycle_manager-15] [INFO] [1754280128.550004285] [lifecycle_manager_navigation]: Destroying lifecycle_manager_navigation
+[ERROR] [opennav_docking-14]: process has died [pid 111846, exit code -2, cmd '/opt/ros/jazzy/lib/opennav_docking/opennav_docking --ros-args --log-level info --ros-args -r __node:=docking_server -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [simulator-1]: process has died [pid 111833, exit code -2, cmd '/home/shuyan/ros2_ws/install/diff_drive_sim_cpp/lib/diff_drive_sim_cpp/simulator --ros-args -r __node:=diff_drive_sim --params-file /tmp/launch_params_pj6zlyrl -r odom:=odom'].
+[ERROR] [behavior_server-9]: process has died [pid 111841, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_behaviors/behavior_server --ros-args --log-level info --ros-args -r __node:=behavior_server -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[ERROR] [velocity_smoother-12]: process has died [pid 111844, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_velocity_smoother/velocity_smoother --ros-args --log-level info --ros-args -r __node:=velocity_smoother -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[ERROR] [amcl-4]: process has died [pid 111836, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_amcl/amcl --ros-args --log-level info --ros-args -r __node:=amcl -p use_sim_time:=True --params-file /tmp/launch_params_znshp_9i -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [lifecycle_manager-5]: process has died [pid 111837, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args --log-level info --ros-args -r __node:=lifecycle_manager_localization -p use_sim_time:=True --params-file /tmp/launch_params_4n12sr2u --params-file /tmp/launch_params_m7lolqs9'].
+[ERROR] [bt_navigator-10]: process has died [pid 111842, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_bt_navigator/bt_navigator --ros-args --log-level info --ros-args -r __node:=bt_navigator -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [collision_monitor-13]: process has died [pid 111845, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_collision_monitor/collision_monitor --ros-args --log-level info --ros-args -r __node:=collision_monitor -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [smoother_server-7]: process has died [pid 111839, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_smoother/smoother_server --ros-args --log-level info --ros-args -r __node:=smoother_server -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [planner_server-8]: process has died [pid 111840, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_planner/planner_server --ros-args --log-level info --ros-args -r __node:=planner_server -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [controller_server-6]: process has died [pid 111838, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_controller/controller_server --ros-args --log-level info --ros-args -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static -r cmd_vel:=cmd_vel_nav'].
+[ERROR] [map_server-3]: process has died [pid 111835, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_map_server/map_server --ros-args --log-level info --ros-args -r __node:=map_server -p use_sim_time:=True --params-file /tmp/launch_params_znshp_9i --params-file /tmp/launch_params_zjlhmg6j -r /tf:=tf -r /tf_static:=tf_static'].
+[ERROR] [waypoint_follower-11]: process has died [pid 111843, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_waypoint_follower/waypoint_follower --ros-args --log-level info --ros-args -r __node:=waypoint_follower -p use_sim_time:=True --params-file /tmp/launch_params_3vmhvizs -r /tf:=tf -r /tf_static:=tf_static'].
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+[ERROR] [lifecycle_manager-15]: process has died [pid 111847, exit code -2, cmd '/opt/ros/jazzy/lib/nav2_lifecycle_manager/lifecycle_manager --ros-args --log-level info --ros-args -r __node:=lifecycle_manager_navigation -p use_sim_time:=True --params-file /tmp/launch_params_y0ffe4kk --params-file /tmp/launch_params_zu5g7geu'].

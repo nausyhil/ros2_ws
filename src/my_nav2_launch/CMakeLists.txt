@@ -31,5 +31,5 @@ ament_package()
 install(
   DIRECTORY launch maps params
   DESTINATION share/${PROJECT_NAME}
-  FILES_MATCHING PATTERN "*.py" PATTERN "*.yaml"
+  FILES_MATCHING PATTERN "*.py" PATTERN "*.yaml" PATTERN "*.pgm"
 )
