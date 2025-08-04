@@ -52,3 +52,9 @@ Fixed SHM issue with
 `echo $FASTRTPS_DEFAULT_PROFILES_FILE`
 
 `export FASTRTPS_DEFAULT_PROFILES_FILE=~/.fastrtps_disable_shm.xml`
+
+Ref Further Readings on FastDDS documentations:\
+https://fast-dds.docs.eprosima.com/en/latest/fastdds/xml_configuration/transports.html\
+https://www.omg.org/spec/DDS/\
+https://www.jsoftware.us/vol6/jsw0606-23.pdf\
+https://orte.sourceforge.net/rtn08_orte.pdf
