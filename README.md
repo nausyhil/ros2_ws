@@ -1,11 +1,3 @@
-`rm -rf /tmp/fastrtps_* /dev/shm/fastdds*`
-
-`vi ~/.fastrtps_disable_shm.xml`
-
-`echo $FASTRTPS_DEFAULT_PROFILES_FILE`
-
-`export FASTRTPS_DEFAULT_PROFILES_FILE=~/.fastrtps_disable_shm.xml`
-
 BUILD
 
 Terminal-1:
@@ -27,9 +19,36 @@ https://github.com/maponarooo/ROS2-Navigation2-Tutorial
 
 FYI Ubuntu Version
 
-`~/ros2_ws$ lsb_release -a
+```
+~/ros2_ws$ lsb_release -a
 No LSB modules are available.
 Distributor ID: Ubuntu
 Description:    Ubuntu 24.04.2 LTS
 Release:        24.04
-Codename:       noble`
+Codename:       noble
+```
+
+August 3, 25
+Fixed SHM issue with
+
+`rm -rf /tmp/fastrtps_* /dev/shm/fastdds*`
+
+`vi ~/.fastrtps_disable_shm.xml`
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<dds xmlns="http://www.eprosima.com">
+  <profiles>
+    <transport_descriptors>
+      <transport_descriptor>
+        <transport_id>udp_transport</transport_id>
+        <type>UDPv4</type>
+      </transport_descriptor>
+    </transport_descriptors>
+  </profiles>
+</dds>
+```
+
+`echo $FASTRTPS_DEFAULT_PROFILES_FILE`
+
+`export FASTRTPS_DEFAULT_PROFILES_FILE=~/.fastrtps_disable_shm.xml`
