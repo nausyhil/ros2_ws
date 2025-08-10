@@ -5,7 +5,12 @@ amcl:
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: "base_footprint"
+    initial_pose:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      yaw: 0.0
+    base_frame_id: "base_link"
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -149,16 +154,14 @@ controller_server:
       AckermannConstraints:
         min_turning_r: 0.2
       critics:
-        [
-          "ConstraintCritic",
-          "CostCritic",
-          "GoalCritic",
-          "GoalAngleCritic",
-          "PathAlignCritic",
-          "PathFollowCritic",
-          "PathAngleCritic",
-          "PreferForwardCritic",
-        ]
+        - "ConstraintCritic"
+        - "CostCritic"
+        - "GoalCritic"
+        - "GoalAngleCritic"
+        - "PathAlignCritic"
+        - "PathFollowCritic"
+        - "PathAngleCritic"
+        - "PreferForwardCritic"
       ConstraintCritic:
         enabled: true
         cost_power: 1
@@ -232,7 +235,7 @@ local_costmap:
       filters: ["keepout_filter"]
       keepout_filter:
         plugin: "nav2_costmap_2d::KeepoutFilter"
-        enabled: KEEPOUT_ZONE_ENABLED
+        enabled: False
         filter_info_topic: "keepout_costmap_filter_info"
         override_lethal_cost: True
         lethal_override_cost: 200
@@ -286,13 +289,13 @@ global_costmap:
       filters: ["keepout_filter", "speed_filter"]
       keepout_filter:
         plugin: "nav2_costmap_2d::KeepoutFilter"
-        enabled: KEEPOUT_ZONE_ENABLED
+        enabled: False
         filter_info_topic: "keepout_costmap_filter_info"
         override_lethal_cost: True
         lethal_override_cost: 200
       speed_filter:
         plugin: "nav2_costmap_2d::SpeedFilter"
-        enabled: SPEED_ZONE_ENABLED
+        enabled: False
         filter_info_topic: "speed_costmap_filter_info"
         speed_limit_topic: "speed_limit"
       obstacle_layer:

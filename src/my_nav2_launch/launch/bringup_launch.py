@@ -63,7 +63,7 @@ def generate_launch_description():
     # Common remappings
     remappings = [
         ('/tf', 'tf'),
-        ('/tf_static', 'tf_static'),
+        ('/tf_static', 'tf_static')
     ]
 
     # 1) Your C++ diff-drive simulator node
@@ -77,6 +77,14 @@ def generate_launch_description():
         remappings=[('odom', 'odom')],
     )
 
+    # Static transforms
+    robot_state_publisher = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='robot_state_publisher',
+        arguments=['--x', '0', '--y', '0', '--z', '0', '--qx', '0', '--qy', '0', '--qz', '0', '--qw', '1', '--frame-id', 'map', '--child-frame-id', 'odom']
+    )
+
     # 2) map_to_laserscan conversion
     laserscan_node = Node(
         package='map_to_laserscan_py',
@@ -86,11 +94,25 @@ def generate_launch_description():
         parameters=[{
             'map_topic': '/map',
             'scan_topic': '/scan',
+            'frame_id': 'laser_frame',
             'angle_min': -1.57,
             'angle_max':  1.57,
-            'range_max':  3.0
+            'range_max':  3.0,
+            'use_sim_time': use_sim_time
         }],
         remappings=[('/tf', 'tf'), ('/tf_static', 'tf_static')],
+    )
+
+        # Add standalone map server
+    map_server = Node(
+        package='nav2_map_server',
+        executable='map_server',
+        name='map_server',
+        output='screen',
+        parameters=[{
+            'use_sim_time': use_sim_time,
+            'yaml_filename': map_yaml_file
+        }]
     )
 
     # 3) Include the official Nav2 bringup launch
@@ -119,7 +141,14 @@ def generate_launch_description():
         # ensure we see console output without buffering
         SetEnvironmentVariable('RCUTILS_LOGGING_BUFFERED_STREAM', '1'),
 
+        # Start transforms first
+        robot_state_publisher,
+        
+        # Then map and simulator
+        map_server,
         simulator_node,
         laserscan_node,
+        
+        # Finally Nav2
         nav2_bringup,
     ])
